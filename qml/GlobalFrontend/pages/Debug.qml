@@ -1,17 +1,21 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.1
+import "../components" as Components
 
 Page {
     id: root
     property string sender : ""
     Rectangle {
         anchors.fill: parent
-        color: "blue"
+        color: "gray"
 
-        Text {
+        Column {
             anchors.centerIn: parent
-            color: "white"
-            text: "Sender: " + getProperty("sender");
+            width: childrenRect.width; height: childrenRect.height
+            Text {
+                color: "white"
+                text: "Sender: " + getProperty("sender");
+            }
         }
     }
 }

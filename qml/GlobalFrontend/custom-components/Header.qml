@@ -8,7 +8,7 @@ Rectangle {
     anchors.top: parent.top
     anchors.topMargin: -80
     z: 99
-    color: "red"
+    color: "#111111"
 
     states: [
         State {
